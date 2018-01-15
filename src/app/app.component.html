@@ -1,2 +1,14 @@
-<h1>{{title}}</h1>
-<app-illustrations></app-illustrations>
+<ng-sidebar-container style="height: 100vh;">
+ 
+      <!-- A sidebar -->
+      <ng-sidebar opened="true">
+        <app-category></app-category>
+
+      </ng-sidebar>
+ 
+      <!-- Page content -->
+      <div ng-sidebar-content>
+       
+      </div>
+ 
+ </ng-sidebar-container>
