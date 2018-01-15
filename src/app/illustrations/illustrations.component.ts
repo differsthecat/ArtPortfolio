@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Illustration } from '../illustration';
+import { ILLUSTRATIONS } from '../mock-illustrations';
 
 @Component({
   selector: 'app-illustrations',
@@ -7,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IllustrationsComponent implements OnInit {
 
-  illustration = 'Succulents';	
-
+  illustrations = ILLUSTRATIONS;
+  
   constructor() { }
 
   ngOnInit() {

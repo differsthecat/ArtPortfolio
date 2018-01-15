@@ -1,0 +1,49 @@
+    /* llustration Component's private CSS styles */
+    .selected {
+      background-color: #6B6E70 !important;
+      color: white;
+    }
+    .illustrations {
+      margin: 0 0 2em 0;
+      list-style-type: none;
+      padding: 0;
+      width: 15em;
+    }
+    .illustrations li {
+      color: white;
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      background-color: #6B6E70;
+      margin: .5em;
+      padding: .3em 0;
+      height: 1.6em;
+      border-radius: 4px;
+    }
+    .illustrations li.selected:hover {
+      background-color: #6B6E70 !important;
+      color: white;
+    }
+    .illustrations li:hover {
+      color: #607D8B;
+      background-color: #DDD;
+      left: .1em;
+    }
+    .illustrations .text {
+      position: relative;
+      top: -3px;
+    }
+    .illustrations .badge {
+      display: inline-block;
+      font-size: small;
+      color: white;
+      padding: 0.8em 0.7em 0 0.7em;
+      background-color: #61892F;
+      line-height: 1em;
+      position: relative;
+      left: -1px;
+      top: -4px;
+      height: 1.8em;
+      margin-right: .8em;
+      border-radius: 4px 0 0 4px;
+    }
