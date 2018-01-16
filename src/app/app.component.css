@@ -1,21 +1,50 @@
 /* Application-wide Styles */
 h1 {
-  color: #86c232;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 350%;
+  text-align: center;
 }
 h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
+  color: white;
+  background-color: #555;
 }
 body {
-  margin: 2em;
+  margin: 0px;
 }
 body, input[text], button {
   color: #888;
   font-family: Cambria, Georgia;
 }
+.sidebar{
+  height: 100vh !important;
+  margin-top: 0em;
+  overflow: none;
+  width: 15em;
+}
+ng-sidebar-content {
+  overflow: hidden;
+}
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-events {
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid #555;
+}
+
+
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+  overflow: none;
 }

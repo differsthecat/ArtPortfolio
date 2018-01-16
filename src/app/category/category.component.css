@@ -4,41 +4,57 @@
       color: white;
     }
     .illustrations {
-      margin: 0 0 2em 0;
+      background-color: #6B6E70;
       list-style-type: none;
       padding: 0;
       width: 15em;
+      height: 100vh;
+      margin-top: 0px;
+      margin-bottom: 0px
     }
     .illustrations li {
+      line-height: 4em;
+      text-align: center;
       color: white;
       cursor: pointer;
       position: relative;
       left: 0;
       background-color: #6B6E70;
-      margin: .5em;
       padding: .3em 0;
-      height: 1.6em;
-      border-radius: 4px;
+      height: 4em;
+      
     }
+     .illustrations li.mainNav {
+      line-height: 4em;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      background-color: #6B6;
+      padding: .3em 0;
+      height: 4em;
+      
+    }
+     
     .illustrations li.selected:hover {
       background-color: #6B6E70 !important;
       color: white;
     }
     .illustrations li:hover {
-      color: #607D8B;
+      color: #6B6E70;
       background-color: #DDD;
-      left: .1em;
+      left: .0em;
     }
     .illustrations .text {
       position: relative;
-      top: -3px;
+      top: 20em;
     }
     .illustrations .badge {
       display: inline-block;
       font-size: small;
       color: white;
       padding: 0.8em 0.7em 0 0.7em;
-      background-color: #61892F;
       line-height: 1em;
       position: relative;
       left: -1px;
@@ -47,3 +63,7 @@
       margin-right: .8em;
       border-radius: 4px 0 0 4px;
     }
+    .sidebar{
+      background-color: #6B6E70;
+    }
+    

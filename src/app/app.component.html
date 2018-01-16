@@ -1,14 +1,13 @@
-<ng-sidebar-container style="height: 100vh;">
- 
-      <!-- A sidebar -->
-      <ng-sidebar opened="true">
-        <app-category></app-category>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened="opened">
+ 	<app-category></app-category>
+  </mat-sidenav>
 
-      </ng-sidebar>
- 
-      <!-- Page content -->
-      <div ng-sidebar-content>
-       
-      </div>
- 
- </ng-sidebar-container>
+  <mat-sidenav-content>
+   <h1> C O N T E N T</h1>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- Copyright 2017 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
