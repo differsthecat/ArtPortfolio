@@ -1,4 +1,13 @@
     /* llustration Component's private CSS styles */
+    .holder {
+    text-align: center;
+    margin: auto;
+    }
+
+    .wrap {
+        margin: auto;
+    }
+
     .selected {
       background-color: #6B6E70 !important;
       color: white;
@@ -7,21 +16,21 @@
       background-color: #6B6E70;
       list-style-type: none;
       padding: 0;
-      width: 15em;
-      height: 100vh;
+      width: 100vw;
+      height: 100px;
       margin-top: 0px;
       margin-bottom: 0px
     }
     .illustrations li {
-      line-height: 4em;
+      line-height: 6em;      
+      display: inline-block;
+      width: 150px;
+      height: 100px;
       text-align: center;
       color: white;
       cursor: pointer;
       position: relative;
-      left: 0;
       background-color: #6B6E70;
-      padding: .3em 0;
-      height: 4em;
       
     }
      .illustrations li.mainNav {
@@ -33,9 +42,11 @@
       left: 0;
       background-color: #6B6;
       padding: .3em 0;
-      height: 4em;
       
     }
+
+
+
      
     .illustrations li.selected:hover {
       background-color: #6B6E70 !important;
