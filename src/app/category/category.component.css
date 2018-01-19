@@ -22,18 +22,42 @@
       margin-bottom: 0px
     }
     .illustrations li {
-      line-height: 6em;      
       display: inline-block;
       width: 150px;
       height: 100px;
-      text-align: center;
-      color: white;
       cursor: pointer;
       position: relative;
       background-color: #6B6E70;
       
     }
-     .illustrations li.mainNav {
+
+    .illustrations li .hide-text {
+      color: white;
+      line-height: 4em;
+      opacity: 0;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      padding: 2px 0px;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      -webkit-transition: opacity 500ms;
+      -moz-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;
+      }
+
+    .illustraions li i {
+      top: 50px;
+      opacity:1;
+    }
+
+    .illustrations li:hover i {
+      opacity: 0;
+    }
+    
+    .illustrations li.mainNav {
       line-height: 4em;
       text-align: center;
       color: white;
@@ -44,23 +68,23 @@
       padding: .3em 0;
       
     }
-
-
-
      
     .illustrations li.selected:hover {
-      background-color: #6B6E70 !important;
+      background-color: white !important;
       color: white;
     }
     .illustrations li:hover {
       color: #6B6E70;
       background-color: #DDD;
       left: .0em;
+
     }
-    .illustrations .text {
-      position: relative;
-      top: 20em;
+
+    .illustrations li:hover .hide-text{
+      color: black;
+      opacity: 0.9;
     }
+
     .illustrations .badge {
       display: inline-block;
       font-size: small;
