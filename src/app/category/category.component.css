@@ -28,33 +28,44 @@
       cursor: pointer;
       position: relative;
       background-color: #6B6E70;
-      
+      -webkit-transition: background-color 500ms;
+      -moz-transition: background-color 500ms;
+      -o-transition: background-color 500ms;
+      transition: background-color 500ms;
     }
 
     .illustrations li .hide-text {
       color: white;
-      line-height: 4em;
-      opacity: 0;
       bottom: 0px;
+      top: -25px;
       left: 0px;
       right: 0px;
       padding: 2px 0px;
       color: #ffffff;
       text-decoration: none;
       text-align: center;
-      -webkit-transition: opacity 500ms;
-      -moz-transition: opacity 500ms;
-      -o-transition: opacity 500ms;
-      transition: opacity 500ms;
+      -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      transition: color 500ms;
       }
 
-    .illustraions li i {
-      top: 50px;
-      opacity:1;
+    .material-icons {
+      color: white;
+      font-size:45px; 
+      margin-top:10px;
+       -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      transition: color 500ms;
     }
 
     .illustrations li:hover i {
-      opacity: 0;
+      -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      transition: color 500ms;
+      color: #6B6E70;
     }
     
     .illustrations li.mainNav {
@@ -77,12 +88,18 @@
       color: #6B6E70;
       background-color: #DDD;
       left: .0em;
-
+      -webkit-transition: background-color 500ms;
+      -moz-transition: background-color 500ms;
+      -o-transition: background-color 500ms;
+      transition: background-color 500ms;
     }
 
     .illustrations li:hover .hide-text{
-      color: black;
-      opacity: 0.9;
+      -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      transition: color 500ms;
+      color: #6B6E70;
     }
 
     .illustrations .badge {

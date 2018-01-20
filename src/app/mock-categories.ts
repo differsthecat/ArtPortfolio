@@ -3,8 +3,8 @@
 import { Category } from './category';
 
 export const CATEGORIES: Category[] = [
-	{ id: 10, name: 'Colored Pencil' }, 
-	{ id: 11, name: 'Oil Paint' },
-	{ id: 12, name: 'Acryllic Paint'},
-	{ id: 13, name: 'Watercolor'}  
+	{ id: 10, name: 'About', icon: 'portrait' }, 
+	{ id: 11, name: 'Art', icon: 'palette' },
+	{ id: 12, name: 'Code', icon: 'code'},
+	{ id: 13, name: 'Other', icon: 'lightbulb_outline'}  
 ];

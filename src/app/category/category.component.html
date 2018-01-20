@@ -3,7 +3,7 @@
 	<ul class="illustrations">
 		<!-- <li class="mainNav"> <i class="material-icons">arrow_downward</i > NAV!!</li> -->
 		<li *ngFor="let category of categories">
-			<i class="material-icons">arrow_downward</i >
+			<i class="material-icons">{{category.icon}}</i>
 			<div class="hide-text">{{category.name}}</div>
 		</li>
 	</ul>
