@@ -9,8 +9,6 @@ import { CATEGORIES } from '../mock-categories';
 })
 
 export class CategoriesComponent implements OnInit {
-
-  categories = CATEGORIES;
   
   constructor() { }
 
