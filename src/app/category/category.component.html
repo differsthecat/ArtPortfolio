@@ -2,25 +2,25 @@
 	<div class="holder">
 	<ul class="illustrations">
 		<!-- <li class="mainNav"> <i class="material-icons">arrow_downward</i > NAV!!</li> -->
-		<li>
+		<li routerLink="about">
 			<i class="material-icons">portrait</i>
 			<div class="hide-text">
 				<span>About</span>
 			</div>
 		</li>
-		<li>
+		<li routerLink="art">
 			<i class="material-icons">palette</i>
 			<div class="hide-text">
 				<span>Art</span>
 			</div>
 		</li>
-		<li>
+		<li routerLink="code">
 			<i class="material-icons">code</i>
 			<div class="hide-text">
 				<span>Code</span>
 			</div>
 		</li>
-		<li>
+		<li routerLink="other">
 			<i class="material-icons">lightbulb_outline</i>
 			<div class="hide-text">
 				<span>Other</span>
@@ -29,3 +29,4 @@
 	</ul>
 </div>
 </div>
+<router-outlet></router-outlet>

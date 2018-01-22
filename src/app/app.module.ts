@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { SidebarModule } from 'ng-sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { RouterLink, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CategoriesComponent } from './category/category.component';
+
 import {
+
   MatAutocompleteModule,
   MatButtonModule,
   MatButtonToggleModule,
@@ -40,12 +42,18 @@ import {
   MatStepperModule,
 } from '@angular/material';
 
+const appRoutes: Routes = [];
+
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
