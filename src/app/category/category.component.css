@@ -112,10 +112,44 @@
       color: white;
       font-size:45px; 
       margin-top:10px;
-       -webkit-transition: color 500ms;
-      -moz-transition: color 500ms;
-      -o-transition: color 500ms;
-      transition: color 500ms;
+      /*box-shadow: 0 0 0 4px rgba(255,255,255,1);*/
+      transition: background 0.2s, color 0.2s;  
+    }
+
+    /*.material-icons:hover {
+      background: rgba(255,255,255,1);
+      color: #64bb5d;
+    }*/
+
+    @keyframes spinAround {
+      49% {
+        transform: scale(1.25,1.25);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(0.5,0.5);
+      }
+      51% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
     }
 
     .illustrations li:hover i {
@@ -123,6 +157,7 @@
       -moz-transition: color 500ms;
       -o-transition: color 500ms;
       transition: color 500ms;
+      transform: scale(1.25);
       color: #6B6E70;
     }
     

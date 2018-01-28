@@ -42,16 +42,46 @@ import {
   MatStepperModule,
 } from '@angular/material';
 
-const appRoutes: Routes = [];
+import { AboutComponent } from './category/about/about.component';
+import { ArtComponent } from './category/art/art.component';
+import { CodeComponent } from './category/code/code.component';
+
+export const routerConfig: Routes = [
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: 'art',
+        component: ArtComponent
+    },
+    {
+        path: 'code',
+        component: CodeComponent
+    },
+    {
+        path: '',
+        redirectTo: '/about',
+        pathMatch: 'full'
+    },
+    {
+        path: '**',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    CategoriesComponent
-  ],
+    CategoriesComponent,
+    AboutComponent,
+    ArtComponent,
+    CodeComponent
+      ],
   imports: [
     RouterModule.forRoot(
-      appRoutes,
+      routerConfig,
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
@@ -96,3 +126,4 @@ const appRoutes: Routes = [];
 export class AppModule { 
 
 }
+
