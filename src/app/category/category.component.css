@@ -30,17 +30,17 @@
     }
 
     .illustrations li.active-route {
-      color: #6B6E70;
-      background-color: #DDD;
+      color: white;
+      background-color: #C3073F;
       left: .0em;
     }
 
     .illustrations li.active-route i {
-      color: #6B6E70;
+      color: white;
     }
 
-    .illustrations li.active-route .hide-text span {
-      color: #6B6E70;
+    .illustrations li.active-route span {
+      color: white;
     }
 
     .example-container {
@@ -67,11 +67,11 @@
     }
 
     .selected {
-      background-color: #6B6E70 !important;
+      background-color: #464e53 !important;
       color: white;
     }
     .illustrations {
-      background-color: #6B6E70;
+      background-color: #464e53;
       list-style-type: none;
       padding: 0;
       width: 100vw;
@@ -81,11 +81,11 @@
     }
     .illustrations li {
       display: inline-block;
-      width: 150px;
+      width: 115px;
       height: 100px;
       cursor: pointer;
       position: relative;
-      background-color: #6B6E70;
+      background-color: #464e53;
       -webkit-transition: background-color 500ms;
       -moz-transition: background-color 500ms;
       -o-transition: background-color 500ms;
@@ -121,6 +121,75 @@
       color: #64bb5d;
     }*/
 
+    .illustrations li:hover i {
+      -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      transition: color 500ms;
+      transform: scale(1.25);
+      color:#464e53;
+    }
+    
+    .illustrations li.mainNav {
+      line-height: 4em;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      background-color: #6B6;
+      padding: .3em 0;
+      
+    }
+     
+    .illustrations li.selected:hover {
+      background-color: white !important;
+      color: white;
+    }
+
+    .illustrations li.active-route:hover span {
+      -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      color: #464e53;
+    }
+    .illustrations li:hover {
+      color: #464e53;
+      background-color: #DDD;
+      left: .0em;
+      -webkit-transition: background-color 500ms;
+      -moz-transition: background-color 500ms;
+      -o-transition: background-color 500ms;
+      transition: background-color 500ms;
+    }
+
+    .illustrations li:hover .hide-text{
+      -webkit-transition: color 500ms;
+      -moz-transition: color 500ms;
+      -o-transition: color 500ms;
+      transition: color 500ms;
+      color: #464e53;
+    }
+
+    .illustrations .badge {
+      display: inline-block;
+      font-size: small;
+      color: white;
+      padding: 0.8em 0.7em 0 0.7em;
+      line-height: 1em;
+      position: relative;
+      left: -1px;
+      top: -4px;
+      height: 1.8em;
+      margin-right: .8em;
+      border-radius: 4px 0 0 4px;
+    }
+    .sidebar{
+      background-color: #464e53;
+    }
+
+    /* Animation functions*/
+    
     @keyframes spinAround {
       49% {
         transform: scale(1.25,1.25);
@@ -151,64 +220,3 @@
         transform: translate3d(4px, 0, 0);
       }
     }
-
-    .illustrations li:hover i {
-      -webkit-transition: color 500ms;
-      -moz-transition: color 500ms;
-      -o-transition: color 500ms;
-      transition: color 500ms;
-      transform: scale(1.25);
-      color: #6B6E70;
-    }
-    
-    .illustrations li.mainNav {
-      line-height: 4em;
-      text-align: center;
-      color: white;
-      cursor: pointer;
-      position: relative;
-      left: 0;
-      background-color: #6B6;
-      padding: .3em 0;
-      
-    }
-     
-    .illustrations li.selected:hover {
-      background-color: white !important;
-      color: white;
-    }
-    .illustrations li:hover {
-      color: #6B6E70;
-      background-color: #DDD;
-      left: .0em;
-      -webkit-transition: background-color 500ms;
-      -moz-transition: background-color 500ms;
-      -o-transition: background-color 500ms;
-      transition: background-color 500ms;
-    }
-
-    .illustrations li:hover .hide-text{
-      -webkit-transition: color 500ms;
-      -moz-transition: color 500ms;
-      -o-transition: color 500ms;
-      transition: color 500ms;
-      color: #6B6E70;
-    }
-
-    .illustrations .badge {
-      display: inline-block;
-      font-size: small;
-      color: white;
-      padding: 0.8em 0.7em 0 0.7em;
-      line-height: 1em;
-      position: relative;
-      left: -1px;
-      top: -4px;
-      height: 1.8em;
-      margin-right: .8em;
-      border-radius: 4px 0 0 4px;
-    }
-    .sidebar{
-      background-color: #6B6E70;
-    }
-    
