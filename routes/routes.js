@@ -1,7 +1,8 @@
-var appRouter = function(app) {
-	app.get("/home", function(req, res) {
-    res.send("Hello! :D");
-});
-}
+var express = require('express');
+var router = express.Router();
 
-module.exports = appRouter;
+router.get('/', function(req, res, next) {
+  res.send('Hello! :D');
+});
+
+module.exports = router;
