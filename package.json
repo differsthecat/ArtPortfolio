@@ -23,7 +23,9 @@
     "@angular/platform-browser": "^5.1.0",
     "@angular/platform-browser-dynamic": "^5.1.0",
     "@angular/router": "^5.1.0",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "ng-sidebar": "^6.0.5",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
@@ -48,5 +50,19 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/differsthecat/ArtPortfolio.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Robyn Cute <rmcutedev@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/differsthecat/ArtPortfolio/issues"
+  },
+  "homepage": "https://github.com/differsthecat/ArtPortfolio#readme"
 }
