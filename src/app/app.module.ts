@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterLink, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CategoriesComponent } from './category/category.component';
-
+import { HttpClientModule } from '@angular/common/http';
 import {
 
   MatAutocompleteModule,
@@ -86,6 +86,7 @@ export const routerConfig: Routes = [
     ),
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     SidebarModule.forRoot(),
     MatAutocompleteModule,

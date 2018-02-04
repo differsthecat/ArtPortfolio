@@ -8,7 +8,7 @@ html{
 }
 body{
   height: calc(100vh - 8em);
-  padding: 8em;
+  padding: 4em;
   color: rgba(255,255,255,.75);
   font-family: 'Courier New';
   background-color: white;  
@@ -18,7 +18,7 @@ body{
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    border-right: 5px solid #C3073F;
+    border-right: 5px solid #8d9ba5;
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
@@ -37,6 +37,6 @@ body{
   to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color:#C3073F;}
+  from{border-right-color:#8d9ba5;}
   to{border-right-color: transparent;}
 }

@@ -31,7 +31,7 @@
 
     .illustrations li.active-route {
       color: white;
-      background-color: #C3073F;
+      background-color: #8d9ba5;
       left: .0em;
     }
 
@@ -75,14 +75,14 @@
       list-style-type: none;
       padding: 0;
       width: 100vw;
-      height: 100px;
+      height: 80px;
       margin-top: 0px;
       margin-bottom: 0px
     }
     .illustrations li {
       display: inline-block;
-      width: 115px;
-      height: 100px;
+      width: 105px;
+      height: 80px;
       cursor: pointer;
       position: relative;
       background-color: #464e53;
@@ -95,7 +95,7 @@
     .illustrations li .hide-text {
       color: white;
       bottom: 0px;
-      top: -25px;
+      top: -15px;
       left: 0px;
       right: 0px;
       padding: 2px 0px;
@@ -110,8 +110,8 @@
 
     .material-icons {
       color: white;
-      font-size:45px; 
-      margin-top:10px;
+      font-size:39px; 
+      margin-top:7px;
       /*box-shadow: 0 0 0 4px rgba(255,255,255,1);*/
       transition: background 0.2s, color 0.2s;  
     }
