@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import * as AWS from 'aws-sdk/global';
+// import * as S3 from 'aws-sdk/clients/s3';
 
 @Component({
   selector: 'app-art',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtComponent implements OnInit {
 
-  constructor() { }
+constructor() { }
 
   ngOnInit() {
+
   }
 
 }
