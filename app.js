@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
+require('dotenv').config()
+
 var route = require('./routes/routes.js');
 var app = express();
 
@@ -33,4 +35,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-require('dotenv').config()
+
