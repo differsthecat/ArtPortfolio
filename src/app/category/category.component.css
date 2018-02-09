@@ -31,7 +31,7 @@
 
     .illustrations li.active-route {
       color: white;
-      background-color: #8d9ba5;
+      background-color: #9195a1;
       left: .0em;
     }
 
@@ -67,11 +67,11 @@
     }
 
     .selected {
-      background-color: #464e53 !important;
+      background-color: #464953 !important;
       color: white;
     }
     .illustrations {
-      background-color: #464e53;
+      background-color: #464953;
       list-style-type: none;
       padding: 0;
       width: 100vw;
@@ -85,7 +85,7 @@
       height: 80px;
       cursor: pointer;
       position: relative;
-      background-color: #464e53;
+      background-color: #464953;
       -webkit-transition: background-color 500ms;
       -moz-transition: background-color 500ms;
       -o-transition: background-color 500ms;
@@ -127,7 +127,7 @@
       -o-transition: color 500ms;
       transition: color 500ms;
       transform: scale(1.25);
-      color:#464e53;
+      color:#464953;
     }
     
     .illustrations li.mainNav {
@@ -151,10 +151,10 @@
       -webkit-transition: color 500ms;
       -moz-transition: color 500ms;
       -o-transition: color 500ms;
-      color: #464e53;
+      color: #464953;
     }
     .illustrations li:hover {
-      color: #464e53;
+      color: #464953;
       background-color: #DDD;
       left: .0em;
       -webkit-transition: background-color 500ms;
@@ -168,7 +168,7 @@
       -moz-transition: color 500ms;
       -o-transition: color 500ms;
       transition: color 500ms;
-      color: #464e53;
+      color: #464953;
     }
 
     .illustrations .badge {
@@ -185,7 +185,7 @@
       border-radius: 4px 0 0 4px;
     }
     .sidebar{
-      background-color: #464e53;
+      background-color: #464953;
     }
 
     /* Animation functions*/

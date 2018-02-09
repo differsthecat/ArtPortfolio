@@ -1,8 +1,7 @@
 
 <div>&nbsp;</div>
-<a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg">
+<!-- <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg">
   <img src="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg" alt="Milky Way">
-</a>
-
-
-<p>{{images}}</p>
+</a> -->
+<span *ngFor="let item of generateArray(jsonData)">{{item}}
+ </span>

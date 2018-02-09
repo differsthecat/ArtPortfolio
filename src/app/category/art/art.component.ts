@@ -10,14 +10,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ArtComponent implements OnInit {
 
-images: any;
+jsonData: any;
+list: any;
 
 constructor(private http: HttpClient) { }
 
   ngOnInit() {
+
+    // Get the paths to the images
   	this.http.get('/route/art').subscribe(data => {
-    this.images = data;
+    	this.jsonData = data;
+    	   	// JSON.parse(this.jsonData).forEach(element => {
+    	//   this.list.push(element.toString());
+    	// });
   });
   }
 
+generateArray(obj){
+	return Object.keys(obj).map((key)=>{ return obj[key].toString()});
+  }
 }

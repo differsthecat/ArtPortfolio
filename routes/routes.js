@@ -22,8 +22,8 @@ router.get('/art', function(req, res, next) {
 
 	s3.listObjects(params, function (err, data) {
 	 if(err)throw err;
-	 console.log(data);
-	 res.send(data);
+	 console.log(data.Contents);
+	 res.send(data.Contents);
 	});
 });
 
