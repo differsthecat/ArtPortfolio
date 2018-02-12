@@ -3,5 +3,32 @@
 <!-- <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg">
   <img src="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg" alt="Milky Way">
 </a> -->
-<span *ngFor="let item of generateArray(jsonData)">{{item}}
- </span>
+<h2>Colored Pencil</h2>
+
+<ul>
+	<li *ngFor="let li of coloredPencilKeys">
+		<img src="https://s3.amazonaws.com/bucket.of.art/">
+	</li>
+</ul>
+
+<h2>Oil Paint</h2>
+
+<ul>
+	<li *ngFor="let li of oilPaintKeys">
+		<span style="color:white;">{{li.Key}}</span>
+	</li>
+</ul>
+
+<h2>All</h2>
+
+<ul>
+	<li *ngFor="let li of jsonData">
+		<span style="color:white;">{{li.Key}}</span>
+	</li>
+</ul>
+
+<ul>
+	<li *ngFor="let li of test">
+		<span style="color:white;">{{li}}</span>
+	</li>
+</ul>
