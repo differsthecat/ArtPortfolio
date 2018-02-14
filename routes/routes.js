@@ -11,12 +11,12 @@ router.get('/', function(req, res, next) {
 router.get('/art', function(req, res, next) {
   var AWS = require('aws-sdk');
 
-  AWS.config.update({accessKeyId: process.env.access_key_id, 
-  					 secretAccessKey: process.env.secret_key, 
+  AWS.config.update({accessKeyId: process.env.access_key_id,
+  					 secretAccessKey: process.env.secret_key,
   					 region: 'us-east-1'});
   var s3 = new AWS.S3();
 
-	var params = { 
+	var params = {
 	 Bucket: 'bucket.of.art'
 	}
 
