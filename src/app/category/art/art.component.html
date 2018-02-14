@@ -7,7 +7,9 @@
 
 <ul>
 	<li *ngFor="let li of coloredPencilKeys">
-		<img src="https://s3.amazonaws.com/bucket.of.art/{{li.Key}}">
+    <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
+      <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
+    </a>
 	</li>
 </ul>
 
@@ -15,7 +17,7 @@
 
 <ul>
 	<li *ngFor="let li of oilPaintKeys">
-		<span style="color:white;">{{li.Key}}</span>
+		<span style="color:white;">{{li}}</span>
 	</li>
 </ul>
 

@@ -23,27 +23,29 @@ constructor(private http: HttpClient) { }
 
   // Get the paths to the images
   this.http.get('/route/art').subscribe(data => {
-  this.jsonData = data;
-  console.log('data type: ' + this.jsonData.constructor.name);
+    this.jsonData = data;
+    console.log('data type: ' + this.jsonData.constructor.name);
 
-  for (var element of this.jsonData) {
+    let coloredPencilKeysArray = [];
+    let oilPaintKeysArray = [];
 
-    this.coloredPencilKeys = [];
-    this.oilPaintKeys = [];
+    for (var element of this.jsonData) {
 
-    if (element.Key.includes('Colored Pencil')) {
-      console.log(element.Key);
-      this.coloredPencilKeys.push(element);
+      if (element.Key.includes('Colored Pencil')) {
+        console.log('COLORED PENCIL ' + element.Key);
+        coloredPencilKeysArray.push(element.Key);
+      }
+
+      if (element.Key.includes('Oil Paint')) {
+        console.log('OIL PAINT ' + element.Key);
+        oilPaintKeysArray.push(element.Key);
+      }
     }
 
-    if (element.Key.includes('Oil Paint')) {
-      console.log(element.Key);
-      this.oilPaintKeys.push(element);
-    }
-  }
-
-});
-  }
+    this.coloredPencilKeys = coloredPencilKeysArray;
+    this.oilPaintKeys = oilPaintKeysArray;
+  });
+}
 
 // generateArray(obj){
 // return Object.keys(obj).map((key)=>{ return obj[key].toString()});
