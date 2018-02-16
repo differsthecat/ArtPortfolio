@@ -31,13 +31,11 @@ constructor(private http: HttpClient) { }
 
     for (var element of this.jsonData) {
 
-      if (element.Key.includes('Colored Pencil')) {
-        console.log('COLORED PENCIL ' + element.Key);
+      if (element.Key.includes('Colored Pencil') && !element.Key.endsWith('/')) {
         coloredPencilKeysArray.push(element.Key);
       }
 
-      if (element.Key.includes('Oil Paint')) {
-        console.log('OIL PAINT ' + element.Key);
+      if (element.Key.includes('Oil Paint') && !element.Key.endsWith('/')) {
         oilPaintKeysArray.push(element.Key);
       }
     }
