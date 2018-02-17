@@ -1,6 +1,15 @@
 # MyArtPortfolio
 
+Angular 5 project that will be a website about me and to display my artwork.
+
+Uses Node.js to serve the application, and Amazon S3 storage for the image files. 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+
+## Starting the project using Node
+
+Run `npm start` to start the server. This will build the Angular 5 project and the Node server and run it on `http://localhost:3000`
 
 ## Development server
 
