@@ -1,40 +1,16 @@
-<div>
-  &nbsp;</div>
-<!-- <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg">
-  <img src="https://s3.amazonaws.com/bucket.of.art/MVIMG_20171104_095513.jpg" alt="Milky Way">
-</a> -->
-<h2>Colored Pencil</h2>
-<div class="container">
-  <ul>
-    <li *ngFor="let li of coloredPencilKeys">
-      <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
-        <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
-      </a>
-    </li>
-  </ul>
+<div class="parent">
+  &nbsp;
+
+  <div class="container" (click)="expandContainer(1)" [ngClass]="getExpanderClass(1)">
+    <h2>Colored Pencil</h2>
+  </div>
+
+  <div class="container" (click)="expandContainer(2)" [ngClass]="getExpanderClass(2)">
+    <h2>Oil Paint</h2>
+  </div>
+
+  <div class="container" (click)="expandContainer(3)" [ngClass]="getExpanderClass(3)">
+    <h2>All</h2>
+  </div>
 
 </div>
-<br/> &nbsp;
-
-<h2>Oil Paint</h2>
-<div class="container">
-  <ul>
-    <li *ngFor="let li of oilPaintKeys">
-      <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
-        <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
-      </a>
-    </li>
-  </ul>
-  <div class="clr"></div>
-</div>
-<br/> &nbsp;
-
-<h2>All</h2>
-<div class="container">
-  <ul>
-    <li *ngFor="let li of jsonData">
-      <span style="color:white;">{{li.Key}}</span>
-    </li>
-  </ul>
-</div>
-<div class="clr"></div>

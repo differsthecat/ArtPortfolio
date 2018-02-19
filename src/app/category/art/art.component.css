@@ -1,6 +1,35 @@
+.parent {
+  text-align:center
+}
+
 .container {
-  position: relative;
+  display:inline-block;
+  margin: 20px;
+  width: 25vw;
+  height: 50vh;
   overflow:auto;
+  text-align:center;
+  background-color:#464953;
+}
+
+.selected-container {
+  display:inline-block;
+  margin: 20px;
+  width: 70vw;
+  background-color: #C3073F;
+  height: 50vh;
+  overflow:auto;
+  text-align:center;
+}
+
+.not-selected-Container {
+  display:inline-block;
+  margin: 20px;
+  width: 10vw;
+  background-color: black;
+  height: 50vh;
+  overflow:auto;
+  text-align:center;
 }
 
 ul {
@@ -13,8 +42,8 @@ ul {
 }
 
 li {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   float: left;
   margin: 5px;
 }
@@ -23,8 +52,8 @@ img {
     border: 1px solid #9195a1; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
-    max-width: 300px; /* Set a small width */
-    max-height: 300px;
+    max-width: 275px; /* Set a small width */
+    max-height: 275px;
 }
 
 /* Add a hover effect (blue shadow) */

@@ -16,6 +16,7 @@ jsonData: any;
 coloredPencilKeys: any;
 oilPaintKeys: any;
 test: any;
+selectedIndex: -1;
 
 constructor(private http: HttpClient) { }
 
@@ -45,9 +46,22 @@ constructor(private http: HttpClient) { }
   });
 }
 
-// generateArray(obj){
-// return Object.keys(obj).map((key)=>{ return obj[key].toString()});
-//  }
-// }
+expandContainer(index) {
+  if (this.selectedIndex === index) {
+      this.selectedIndex = -1;
+  } else {
+    this.selectedIndex = index;
+  }
+}
+
+getExpanderClass(index) {
+    if (this.selectedIndex === -1) {
+      return 'container';
+    } else if (this.selectedIndex === index) {
+      return 'selected-container';
+    } else {
+      return 'not-selected-container';
+    }
+  }
 }
 
