@@ -3,6 +3,11 @@
 }
 
 .container {
+  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out ;
+  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
   display:inline-block;
   margin: 20px;
   width: 25vw;
@@ -13,6 +18,11 @@
 }
 
 .selected-container {
+  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out ;
+  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
   display:inline-block;
   margin: 20px;
   width: 70vw;
@@ -22,7 +32,12 @@
   text-align:center;
 }
 
-.not-selected-Container {
+.not-selected-container {
+  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out ;
+  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
   display:inline-block;
   margin: 20px;
   width: 10vw;

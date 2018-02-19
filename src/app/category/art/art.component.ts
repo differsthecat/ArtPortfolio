@@ -22,6 +22,7 @@ constructor(private http: HttpClient) { }
 
   ngOnInit() {
 
+  this.selectedIndex = -1;
   // Get the paths to the images
   this.http.get('/route/art').subscribe(data => {
     this.jsonData = data;
