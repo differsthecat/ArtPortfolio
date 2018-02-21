@@ -64,5 +64,13 @@ getExpanderClass(index) {
       return 'not-selected-container';
     }
   }
+
+getIconClass(index) {
+  if (this.selectedIndex === index) {
+    return 'open';
+  } else {
+    return '';
+  }
+}
 }
 
