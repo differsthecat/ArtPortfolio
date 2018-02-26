@@ -3,13 +3,14 @@
 }
 
 .container {
-  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out ;
-  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
   display:inline-block;
   margin: 20px;
+  margin-top: 30px;
   width: 25vw;
   height: 50vh;
   overflow:auto;
@@ -18,36 +19,39 @@
 }
 
 .selected-container {
-  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out ;
-  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
   display:inline-block;
   margin: 20px;
-  width: 70vw;
-  background-color: #C3073F;
-  height: 50vh;
+  margin-top: 30px;
+  width: 80vw;
+  background-color: #9195a1;
+  height: 80vh;
   overflow:auto;
   text-align:center;
 }
 
 .not-selected-container {
-  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out ;
-  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
-  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out;
+  -webkit-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -moz-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -ms-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  -o-transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
+  transition: background-color 1000ms ease-in-out,width 500ms ease-in-out,height 500ms ease-in-out;
   display:inline-block;
-  margin: 20px;
-  width: 10vw;
+  margin: 0px;
+  margin-top: 30px;
+  width: 0vw;
   background-color: black;
-  height: 50vh;
+  height: 0vh;
   overflow:auto;
   text-align:center;
 }
 
 ul {
+  list-style: none;
   list-style-position: inside;
 }
 
@@ -80,12 +84,15 @@ h2 {
   color: white;
 }
 
-/* Icon 3 */
+/* Icon */
 #nav-icon {
   width: 50px;
   height: 45px;
   position: relative;
-  margin: 50px auto;
+  top: 0px;
+  right: 0px;
+  margin: 10px auto;
+  margin-left: 10px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -102,7 +109,7 @@ h2 {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #a0a0a0;
+  background: #9195a1;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -132,6 +139,7 @@ h2 {
   top: 18px;
   width: 0%;
   left: 50%;
+  
 }
 
 #nav-icon.open span:nth-child(2) {
@@ -139,6 +147,7 @@ h2 {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  background: white;
 }
 
 #nav-icon.open span:nth-child(3) {
@@ -146,6 +155,7 @@ h2 {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  background: white;
 }
 
 #nav-icon.open span:nth-child(4) {

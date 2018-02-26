@@ -2,33 +2,52 @@
   &nbsp;
 
   <div class="container" (click)="expandContainer(1)" [ngClass]="getExpanderClass(1)">
-    <div id="nav-icon" [ngClass]="getIconClass(1)">
+    <div *ngIf="selectedIndex == 1 || selectedIndex == -1" id="nav-icon" [ngClass]="getIconClass(1)">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <h2>Colored Pencil</h2>
+    <h2 *ngIf="selectedIndex == 1 || selectedIndex == -1">Colored Pencil</h2>
+    <ul *ngIf="selectedIndex == 1">
+      <li *ngFor="let li of coloredPencilKeys">
+        <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
+          <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
+        </a>
+      </li>
+    </ul>
   </div>
 
   <div class="container" (click)="expandContainer(2)" [ngClass]="getExpanderClass(2)">
-    <div id="nav-icon" [ngClass]="getIconClass(2)">
+    <div *ngIf="selectedIndex ==  2|| selectedIndex == -1" id="nav-icon" [ngClass]="getIconClass(2)">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <h2>Oil Paint</h2>
+    <h2 *ngIf="selectedIndex == 2 || selectedIndex == -1">Oil Paint</h2>
+    <ul *ngIf="selectedIndex == 2">
+      <li *ngFor="let li of oilPaintKeys">
+        <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
+          <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
+        </a>
+      </li>
+    </ul>
   </div>
 
   <div class="container" (click)="expandContainer(3)" [ngClass]="getExpanderClass(3)">
-    <div id="nav-icon" [ngClass]="getIconClass(3)">
+    <div *ngIf="selectedIndex == 3 || selectedIndex == -1" id="nav-icon" [ngClass]="getIconClass(3)">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <h2>All</h2>
+    <h2 *ngIf="selectedIndex == 3 || selectedIndex == -1">All</h2>
+    <div *ngIf="selectedIndex == 3">
+      <li *ngFor="let li of jsonData">
+        <span style="color:white;">{{li.Key}}</span>
+      </li>
+    </div>
   </div>
 
 </div>
