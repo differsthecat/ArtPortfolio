@@ -10,7 +10,8 @@
     </div>
     <h2 *ngIf="selectedIndex == 1 || selectedIndex == -1">Colored Pencil</h2>
     <ul *ngIf="selectedIndex == 1">
-      <li *ngFor="let li of coloredPencilKeys">
+      <li *ngFor="let li of coloredPencilKeys; let i = index"
+          (@flyInOut.done)="doNext(1)">
         <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
           <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
         </a>
@@ -27,7 +28,8 @@
     </div>
     <h2 *ngIf="selectedIndex == 2 || selectedIndex == -1">Oil Paint</h2>
     <ul *ngIf="selectedIndex == 2">
-      <li *ngFor="let li of oilPaintKeys">
+      <li *ngFor="let li of oilPaintKeys; let i = index"
+          (@flyInOut.done)="doNext(2)">
         <a target="_blank" href="https://s3.amazonaws.com/bucket.of.art/{{li}}">
           <img src="https://s3.amazonaws.com/bucket.of.art/{{li}}">
         </a>
